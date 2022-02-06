@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex. 58-1</title>
+</head>
+<body>
+  <script>
+    let arr1 = [5, , 2, , 18]; 
+    console.log(`Исходный массив: ${arr1}`);
+    console.log(`С помощью  цикла "for" выведем элементы этого массива`);
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] == null)
+        console.log(`Элемент массива под номером ${(i + 1)} = " "`);
+      else console.log(`Элемент массива под номером ${(i + 1)} = ${arr1[i]}`);
+    }    
+  </script>
+</body>
+</html>
+
+

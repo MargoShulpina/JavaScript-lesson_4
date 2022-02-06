@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex. 52</title>
+</head>
+<body>
+  <script>
+    let arr1 = ['a', 'b', 'c', 'b', 'a'];    
+    console.log(`Исходный массив: ${arr1}`);
+    arr1.sort();
+    console.log(`Используя функцию "sort", выводим отсортированный массив: ${arr1}`);
+    for (let i = 0; i < arr1.length; i++)
+      if (arr1[i] == arr1[i + 1])
+      arr1.splice(i, 1);
+    console.log(`Используя функцию "splice", выводим массив без повторяющихся элементов: ${arr1}`);     
+  </script>
+</body>
+</html>
